@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Open+Sans:ital,wght@1,300&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    background-color: #eee;
+    overflow-x: hidden;
+    font-family: "Nunito", sans-serif;
+}
+.header {
+    background-color: black;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header #bershop {
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+.main {
+    padding-top:30vh ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.main .text {
+    font-size: 2rem;
+    opacity: .6;
+}

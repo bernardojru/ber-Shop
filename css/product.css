@@ -1,0 +1,142 @@
+.header {
+    position:static;
+}
+.description-title {
+    /* background-color: black; */
+    height: 40vh;
+    margin-top: -4.1rem;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+}
+.type-product {
+    width: 20rem;
+    background-color: black;
+    padding: 10px;
+    border-radius: 40px;
+    transform: translateY(60px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.type-product-title {
+    font-size: 1.5rem;
+    color: white;
+    cursor: none;
+}
+#laptop-container {
+    margin-top: 3rem;
+    padding-top: 3rem ;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-content: center;
+}
+.laptop-nice-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    transform: translateY(50px);
+    transition: all .8s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+    background-color: whitesmoke;  
+}
+.laptop-nice-container .laptop-nice {
+    width: 30vw;
+    height: 30vh;
+    background: url(../img/laptop-nice.jpg)no-repeat center center / cover;
+    min-width: 400px;
+    cursor: pointer;
+}
+.laptop-white-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    transform: translateY(100px);
+    transition: all .8s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+    background-color: whitesmoke;  
+}
+.laptop-white-container .laptop-white {
+    width: 30vw;
+    height: 30vh;
+    background: url(../img/laptop-white.jpg)no-repeat center center / cover;
+    min-width: 400px;
+    cursor: pointer;
+}
+.laptop-work-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    transform: translateY(150px);
+    transition: all .8s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+    background-color: whitesmoke;
+}
+.laptop-work-container .laptop-work {
+    width: 30vw;
+    height: 30vh;
+    background: url(../img/work.jpg) no-repeat center center / cover;
+    min-width: 400px;
+    cursor: pointer;
+}
+.laptop-container-show {
+    transition: all .8s ease-in-out;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0px);
+}
+#setup-container {
+    margin-top: 10rem ;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-content: center;
+}
+.container-product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background-color: whitesmoke;
+}
+.container-product .setup-black-nice {
+    width: 30vw;
+    height: 30vh;
+    background:url(../img/setup_black_nice.jpg) no-repeat center center/ cover ;
+    min-width: 400px;
+    cursor: pointer;
+}
+.container-product .desktop {
+    width: 30vw;
+    height: 30vh;
+    background: url(../img/desktop.jpg) no-repeat center center / cover;
+    min-width: 400px;
+    cursor: pointer;
+}
+.container-product .setup-promotion {
+    width: 30vw;
+    height: 30vh;
+    background: url(../img/setup_luzes.jpg) no-repeat center center / cover;
+    min-width: 400px;
+    cursor: pointer;
+}
+@media screen and (max-width:1100px){
+    #laptop-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    #setup-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

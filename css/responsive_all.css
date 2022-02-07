@@ -1,0 +1,43 @@
+#nav-container {
+    display: flex;
+}
+
+.nav {
+    position: absolute;
+    transform: translateY(135px) translateX(-30px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20vw;
+    padding: 20px;
+    min-width: 200px;
+    background-color: rgb(16, 16, 43);
+    opacity: 0;
+    visibility: hidden;
+}
+.nav-show-toggle {
+    opacity: 1;
+    visibility:visible;
+}
+.nav .menu:hover {
+    text-decoration: underline;
+}
+#search-box {
+    opacity: 1;
+    visibility: visible;
+}
+
+.description {
+    height: 60vh;
+    width: 70vw;
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+#product-promotion {
+    flex-direction: column;
+}
+
