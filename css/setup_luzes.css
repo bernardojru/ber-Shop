@@ -21,7 +21,7 @@ body {
     align-items: center;
     justify-content: space-between;
     /* border: solid white; */
-    width: 55vw;
+    width: 60vw;
 }
 #bershop {
     text-decoration: none;
@@ -41,13 +41,14 @@ body {
 }
 .main-img {
     width: 50vw;
-    min-width: 450px;
+    min-width: 400px;
     height: 70vh;
     background: url(../img/setup_luzes.jpg) no-repeat center center / cover;
 }
 .main-details {
     width: 40vw;
     height: 50vh;
+    min-width: 400px;
     text-align: center;
     background-color:whitesmoke;
     display: flex;
@@ -56,7 +57,8 @@ body {
     justify-content: space-evenly;
 }
 .main-details .btn {
-    margin: 10px;   
+    margin: 10px; 
+    min-width: 300px;
     width: 12rem;
     height: 3rem; 
     border-radius: 5px;
@@ -77,8 +79,5 @@ body {
 @media screen and (max-width:1200px){
     .main {
         flex-direction: column;
-    }
-    .main-details .details-product {
-        font-size:.8rem;
     }
 }

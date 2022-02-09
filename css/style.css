@@ -257,6 +257,7 @@ body {
 
 }
 .promotion-info {
+    text-align: center;
     font-size: 1.5rem;
     color: white;
 }
