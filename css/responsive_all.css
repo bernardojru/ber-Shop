@@ -28,8 +28,8 @@
 }
 
 .description {
-    height: 60vh;
-    width: 70vw;
+    height: 40vh;
+    width: 100vw;
 }
 
 #main {
@@ -39,5 +39,11 @@
 }
 #product-promotion {
     flex-direction: column;
+}
+.logo {
+    text-align: center;
+}
+.line {
+    text-align: center;
 }
 
