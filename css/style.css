@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Open+Sans:ital,wght@1,300&display=swap');
-
 * {
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
+}
+html {
+    scroll-behavior: smooth;
 }
 body {
     background-color: #eee;
@@ -23,36 +25,29 @@ body {
     visibility: hidden;
     padding: 20px;
     transition: all 0.8s ease-in-out 0s;
-    /* border: solid; */
 }
 .header-show {
     transform: translateY(0px);
     opacity: 1;
     visibility: visible;
 }
-
 .header #title {
     font-size: 1rem;
     letter-spacing: 10px;
     opacity: 2;
-    cursor: none;
     transition: all 0.8s ease-in-out 0s;
-}
-#title:hover {
-    color: aqua;
+    cursor: context-menu;
 }
 .header #nav-container {
     display: flex;
     align-items: center;
     gap: 30px;
-    /* border: solid; */
 }
 #nav-container .nav {
     display: flex;
     align-items: center;
     color: white;
     gap: 50px;
-    /* border: solid; */
 }
 .nav .menu {
     letter-spacing: 2px;
@@ -62,6 +57,13 @@ body {
 }
 .menu:hover {
     opacity: .6;
+}
+.login {
+    padding: 5px 20px;
+    background-color: rgb(194, 58, 81);
+    text-decoration: none;
+    color: inherit;
+    border-radius: 5px;
 }
 .library a {
     display: flex;
@@ -114,7 +116,6 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    /* border: solid; */
 }
 .logo {
     font-size: 3rem;
@@ -129,6 +130,7 @@ body {
     opacity: 1;
     visibility: visible;
     transition: all 0.8s ease-in-out 0s;
+    /* border: solid; */
 }
 .line {
     font-size: 1rem;
@@ -175,9 +177,6 @@ body {
     transition: all 0.8s ease-in-out 0s;
     cursor: pointer;
 }
-
-
-
 #main {
     display: flex;
     align-items: center;
@@ -201,7 +200,6 @@ body {
     justify-content: center;
     background: url(../img/best_pic.jpg) center center / cover no-repeat;
 }
-
 .main-title {
     font-size: 2rem;
     color: white;
@@ -214,7 +212,6 @@ body {
     min-width: 450px;
     transition: all 0.4s ease-in-out;
 }
-
 #main .main-box:hover {
     background-color: rgba(0,0,0,0.5);
     background-blend-mode: color;
@@ -229,26 +226,23 @@ body {
     margin: 4rem;
     text-align: center;
 }
-
 #product-promotion {
     width: 100vw;
-    height: 65vh;
+    /* height: 100vh; */
+    padding: 20px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     background-color: rgb(47, 47, 61);
 
 }
-
 .product-img {
     width: 40vw;
-    height: 40vh;
-    background: url(../img/setup_double.jpg) no-repeat center center / cover ;
+    height: 100vh;
+    background: url(../img/notebook_express.jpg) no-repeat center center / cover ;
     min-width: 450px;
 }
 .box-promotion {
-    /* border:1px solid;
-    padding: 10px; */
     height: 20vh;
     display: flex;
     flex-direction: column;
@@ -273,14 +267,24 @@ body {
     cursor: pointer;
     text-decoration: none;
 }
-
 #footer {
     margin-top: 10rem;
     padding: 1rem;
     background-color: black;
 }
-
 #footer .copyright{
     text-align: center;
     color: white;
+}
+::-webkit-scrollbar-track {
+    background-color: #eee;
+}
+::-webkit-scrollbar {
+    width: 8px;
+    background: #f4f4f4;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 15px;
+    background: #444;
 }

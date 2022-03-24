@@ -14,19 +14,16 @@ body {
     padding: 10px;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
 }
 .header .nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* border: solid white; */
-    width: 60vw;
 }
 #bershop {
     text-decoration: none;
     color: white;
-    font-size: 2rem;
     letter-spacing: 10px;
 }
 .shop {
@@ -57,17 +54,17 @@ body {
     justify-content: space-evenly;
 }
 .main-details .btn {
-    margin: 10px;   
-    width: 12rem;
+    margin: 10px; 
     min-width: 300px;
+    width: 12rem;
     height: 3rem; 
-    border-radius: 5px;
-    background-color: #32b259;
+    border-radius: 30px;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    background-color: rgb(194, 58, 81);
 }
 .main-details .name-product {
     font-size: 2rem;
@@ -80,4 +77,16 @@ body {
     .main {
         flex-direction: column;
     }
+}
+::-webkit-scrollbar-track {
+    background-color: #eee;
+}
+::-webkit-scrollbar {
+    width: 8px;
+    background: #f4f4f4;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 15px;
+    background: #444;
 }

@@ -3,7 +3,7 @@
 }
 .nav {
     position: absolute;
-    transform: translateY(135px) translateX(-30px);
+    transform: translateY(135px) translateX(250px);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -13,13 +13,12 @@
     background-color: rgb(16, 16, 43);
     opacity: 0;
     visibility: hidden;
+    transition: all .8s ease-in-out;
 }
 .nav-show-toggle {
-    opacity: 1;
+    opacity: 3;
     visibility:visible;
-}
-.nav .menu:hover {
-    text-decoration: underline;
+    transform: translateY(135px) translateX(0px);
 }
 #search-box {
     opacity: 1;
@@ -39,7 +38,9 @@
 }
 .logo-show {
     font-size: 1.5rem;
+    width: 35vw;
 }
 .logo {
     font-size: 1.5rem;
+    width: 35vw;
 }

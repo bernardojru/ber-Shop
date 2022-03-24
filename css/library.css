@@ -18,9 +18,9 @@ body {
     justify-content: center;
 }
 .header #bershop {
-    color: white;
-    font-size: 1.5rem;
     text-decoration: none;
+    color: white;
+    letter-spacing: 10px;
 }
 .main {
     padding-top:30vh ;
@@ -32,4 +32,16 @@ body {
 .main .text {
     font-size: 2rem;
     opacity: .6;
+}
+::-webkit-scrollbar-track {
+    background-color: #eee;
+}
+::-webkit-scrollbar {
+    width: 8px;
+    background: #f4f4f4;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 15px;
+    background: #444;
 }

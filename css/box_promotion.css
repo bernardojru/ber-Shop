@@ -14,19 +14,16 @@ body {
     padding: 10px;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
 }
 .header .nav {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    /* border: solid white; */
-    width: 60vw;
+    justify-content: center;
 }
 #bershop {
     text-decoration: none;
     color: white;
-    font-size: 2rem;
     letter-spacing: 10px;
 }
 .shop {
@@ -37,37 +34,35 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding-top: 65px;
 }
 .main-img {
-    width: 50vw;
+    width: 40vw;
     min-width: 400px;
-    height: 70vh;
-    background: url(../img/setup_double.jpg) no-repeat center center / cover;
+    height: 90vh;
+    background: url(../img/notebook_express.jpg) no-repeat center center / cover;
 }
 .main-details {
     width: 40vw;
     height: 50vh;
+    min-width: 400px;
+    text-align: center;
     background-color:whitesmoke;
     display: flex;
-    text-align: center;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    min-width: 450px;
 }
 .main-details .btn {
-    margin: 10px;   
-    width: 12rem;
-    min-width: 300px;
+    margin-top: 10px; 
     height: 3rem; 
-    border-radius: 5px;
-    background-color: #32b259;
+    /* padding: 0px 30px ; */
+    border-radius: 30px;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    background-color: rgb(194, 58, 81); 
 }
 .main-details .name-product {
     font-size: 2rem;
@@ -80,4 +75,16 @@ body {
     .main {
         flex-direction: column;
     }
+}
+::-webkit-scrollbar-track {
+    background-color: #eee;
+}
+::-webkit-scrollbar {
+    width: 8px;
+    background: #f4f4f4;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 15px;
+    background: #444;
 }
