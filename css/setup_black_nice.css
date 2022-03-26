@@ -81,15 +81,9 @@ body {
         font-size: 1.5rem;
     }
 }
-::-webkit-scrollbar-track {
-    background-color: #eee;
-}
 ::-webkit-scrollbar {
     width: 8px;
-    background: #f4f4f4;
 }
-
 ::-webkit-scrollbar-thumb {
-    border-radius: 15px;
-    background: #444;
+    background: #333;
 }
