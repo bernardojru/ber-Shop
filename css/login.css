@@ -10,7 +10,7 @@ body {
     font-family: "Nunito", sans-serif;
 }
 .header{
-    background-color:rgba(6, 6, 29, 0.555);
+    background-color: black;
     padding: 10px;
     text-align: center;
 }
@@ -31,7 +31,7 @@ fieldset {
     width: 30vw;
     height: 45vh;
     min-width: 400px;
-    border:1px solid rgba(128, 128, 128, 0.37);
+    border:1px solid;
 }
 legend {
     color:rgb(194, 58, 81);
@@ -52,7 +52,6 @@ legend {
     width: 16vw;
     border-radius: 5px;
     border: 1px solid;
-    opacity: .5;
     outline: none;
 }
 #submit {
