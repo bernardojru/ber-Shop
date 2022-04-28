@@ -84,53 +84,66 @@ body {
 #search-box .box:nth-child(3) {
     width: 0.5rem;
 }
-.description-title {
-    text-decoration: none;
-    margin-top: -4.1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    color: white;
-}
 .container-online {
     width: 100vw;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100vh;
     background: url(../img/best_pic.jpg) no-repeat center center / cover fixed;
     background-color: rgba(0,0,0,0.6);
     background-blend-mode: color;
+    transition: all .4s ease-in-out;
 }
-.type-product {
+.new-container {
     width: 100vw;
-    padding: 10px;
+    height: 100vh;
+    color: white;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    background: url(../img/new_best_pic.jpg) center center / cover no-repeat fixed;
+    background-color: rgba(0,0,0,0.6);
+    background-blend-mode: color;
+    transition: all .4s ease-in-out;
 }
-.type-product-title {
-    font-size: 2rem;
-    letter-spacing: 5px;
+.logo {
+    font-size: 3rem;
     color: white;
     text-align: center;
+    width: 100vw;
+    font-family: 'Courier New', Courier, monospace;
 }
-.all-product {
+.btn {
+    width: 10rem;
     display: flex;
-    gap: 10px;
     align-items: center;
     justify-content: center;
-    margin-top: 4rem;
-}
-.all-product a {
-    border:1px solid white;
-    padding: 0px 20px;
-    border-radius: 5px;
-    text-decoration: none;
     color: white;
-    letter-spacing: 2px;
+    padding: 5px;
+    border-radius: 40px;
+    border: 1px solid aqua;
+    cursor: pointer;
+}
+#view {
+    width: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    padding: 5px;
+    border-radius: 40px;
+    background-color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+.type-product {
+    margin-top: 3rem;
+    display: flex;
+    gap: 30px;
+    align-items: center;
 }
 #laptop-container {
     margin-top: 3rem;
@@ -152,7 +165,7 @@ body {
 .laptop-nice-container .laptop-nice {
     width: 30vw;
     height: 30vh;
-    background: url(../img/laptop-nice.jpg)no-repeat center center / cover;
+    background: url(../img/laptop-nice.jpg) no-repeat center center / cover;
     min-width: 400px;
     cursor: pointer;
 }
@@ -169,7 +182,7 @@ body {
 .laptop-white-container .laptop-white {
     width: 30vw;
     height: 30vh;
-    background: url(../img/laptop-white.jpg)no-repeat center center / cover;
+    background: url(../img/laptop-white.jpg) no-repeat center center / cover;
     min-width: 400px;
     cursor: pointer;
 }
@@ -264,6 +277,9 @@ body {
         opacity: 1;
         visibility: visible;
         cursor: pointer;
+    }
+    .logo {
+        font-size: 2.5rem;
     }
     #laptop-container {
         grid-template-columns: repeat(1, 1fr);
