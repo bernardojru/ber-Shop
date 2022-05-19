@@ -1,297 +1,305 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Open+Sans:ital,wght@1,300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Open+Sans:ital,wght@1,300&display=swap");
 * {
-    box-sizing: border-box;
-    margin: 0px;
-    padding: 0px;
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
 }
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 body {
-    background-color: #eee;
-    overflow-x: hidden;
-    font-family: "Nunito", sans-serif;
+  background-color: #eee;
+  overflow-x: hidden;
+  font-family: "Nunito", sans-serif;
 }
 .header {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 100vw;
-    color: white;
-    position: absolute;
-    padding: 20px;
-    background-color: black;
-    position: fixed;
-    transition: all 0.8s ease-in-out 0s;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100vw;
+  color: white;
+  position: absolute;
+  padding: 20px;
+  background-color: black;
+  position: fixed;
+  transition: all 0.8s ease-in-out 0s;
 }
 .header #title {
-    font-size: 1rem;
-    letter-spacing: 10px;
-    opacity: 2;
-    cursor: context-menu;
-    transition: all 0.8s ease-in-out 0s;
+  font-size: 1rem;
+  letter-spacing: 10px;
+  opacity: 2;
+  cursor: context-menu;
+  transition: all 0.8s ease-in-out 0s;
 }
 .header #nav-container {
-    display: flex;
-    align-items: center;
-    gap: 30px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
 }
 #nav-container .nav {
-    display: flex;
-    align-items: center;
-    color: white;
-    gap: 50px;
+  display: flex;
+  align-items: center;
+  color: white;
+  gap: 50px;
 }
 .nav .menu {
-    letter-spacing: 2px;
-    color: inherit;
-    text-decoration: none;
-    transition: all 0.2s ease-in-out 0s;
+  letter-spacing: 2px;
+  color: inherit;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out 0s;
 }
-.menu:hover {
-    opacity: .6;
+.menu::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  display: flex;
+  background-color: rgb(194, 58, 81);
+  transition: all 0.4s ease-in-out 0s;
+}
+.menu:hover::after {
+  width: 100%;
 }
 .login {
-    padding: 5px 20px;
-    background-color: rgb(194, 58, 81);
-    text-decoration: none;
-    color: inherit;
-    border-radius: 5px;
+  padding: 5px 20px;
+  background-color: rgb(194, 58, 81);
+  text-decoration: none;
+  color: inherit;
+  border-radius: 5px;
 }
 .library a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .library .shop {
-    width: 25px;
-    height: 25px;
+  width: 25px;
+  height: 25px;
 }
 #search-box {
-    opacity: 0;
-    visibility: hidden;
-    cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  cursor: pointer;
 }
 #search-box .box {
-    width: 1.5rem;
-    height: 1px;
-    background-color: white;
-    margin: 5px;
+  width: 1.5rem;
+  height: 1px;
+  background-color: white;
+  margin: 5px;
 }
 #search-box .box:nth-child(1) {
-    width: 1rem;
+  width: 1rem;
 }
 #search-box .box:nth-child(3) {
-    width: 0.5rem;
+  width: 0.5rem;
 }
 .container-online {
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    background: url(../img/best_pic.jpg) no-repeat center center / cover fixed;
-    background-color: rgba(0,0,0,0.6);
-    background-blend-mode: color;
-    transition: all .4s ease-in-out;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: url(../img/best_pic.jpg) no-repeat center center / cover fixed;
+  background-color: rgba(0, 0, 0, 0.6);
+  background-blend-mode: color;
+  transition: all 0.4s ease-in-out;
 }
 .new-container {
-    width: 100vw;
-    height: 100vh;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background: url(../img/new_best_pic.jpg) center center / cover no-repeat fixed;
-    background-color: rgba(0,0,0,0.6);
-    background-blend-mode: color;
-    transition: all .4s ease-in-out;
+  width: 100vw;
+  height: 100vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: url(../img/new_best_pic.jpg) center center / cover no-repeat fixed;
+  background-color: rgba(0, 0, 0, 0.6);
+  background-blend-mode: color;
+  transition: all 0.4s ease-in-out;
 }
 .logo {
-    font-size: 3rem;
-    color: white;
-    text-align: center;
-    width: 100vw;
-    font-family: 'Courier New', Courier, monospace;
+  font-size: 3rem;
+  color: white;
+  text-align: center;
+  width: 100vw;
+  font-family: "Courier New", Courier, monospace;
 }
 .btn {
-    width: 10rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    padding: 5px;
-    border-radius: 40px;
-    border: 1px solid aqua;
-    cursor: pointer;
+  width: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  padding: 5px;
+  border-radius: 40px;
+  background-color: rgb(194, 58, 81);
+  cursor: pointer;
 }
 #view {
-    width: 10rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: rgb(0, 0, 0);
-    padding: 5px;
-    border-radius: 40px;
-    background-color: white;
-    text-decoration: none;
-    cursor: pointer;
+  width: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(0, 0, 0);
+  padding: 5px;
+  border-radius: 40px;
+  background-color: white;
+  text-decoration: none;
+  cursor: pointer;
 }
 .type-product {
-    margin-top: 3rem;
-    display: flex;
-    gap: 30px;
-    align-items: center;
+  margin-top: 3rem;
+  display: flex;
+  gap: 30px;
+  align-items: center;
 }
 #laptop-container {
-    margin-top: 3rem;
-    padding-top: 3rem ;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    align-content: center;
+  margin-top: 3rem;
+  padding-top: 3rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-content: center;
 }
 .laptop-nice-container {
-    display: flex;
-    padding: 10px;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    transition: all .8s ease-in-out;
-    background-color: whitesmoke;  
+  display: flex;
+  padding: 10px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  transition: all 0.8s ease-in-out;
+  background-color: whitesmoke;
 }
 .laptop-nice-container .laptop-nice {
-    width: 30vw;
-    height: 30vh;
-    background: url(../img/laptop-nice.jpg) no-repeat center center / cover;
-    min-width: 400px;
-    cursor: pointer;
+  width: 30vw;
+  height: 30vh;
+  background: url(../img/laptop-nice.jpg) no-repeat center center / cover;
+  min-width: 400px;
+  cursor: pointer;
 }
 .laptop-white-container {
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    transition: all .8s ease-in-out;
-    background-color: whitesmoke;  
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  transition: all 0.8s ease-in-out;
+  background-color: whitesmoke;
 }
 .laptop-white-container .laptop-white {
-    width: 30vw;
-    height: 30vh;
-    background: url(../img/laptop-white.jpg) no-repeat center center / cover;
-    min-width: 400px;
-    cursor: pointer;
+  width: 30vw;
+  height: 30vh;
+  background: url(../img/laptop-white.jpg) no-repeat center center / cover;
+  min-width: 400px;
+  cursor: pointer;
 }
 .laptop-work-container {
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    transition: all .8s ease-in-out;
-    background-color: whitesmoke;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  transition: all 0.8s ease-in-out;
+  background-color: whitesmoke;
 }
 .laptop-work-container .laptop-work {
-    width: 30vw;
-    height: 30vh;
-    background: url(../img/work.jpg) no-repeat center center / cover;
-    min-width: 400px;
-    cursor: pointer;
+  width: 30vw;
+  height: 30vh;
+  background: url(../img/work.jpg) no-repeat center center / cover;
+  min-width: 400px;
+  cursor: pointer;
 }
 .laptop-container-show {
-    transition: all .8s ease-in-out;
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0px);
+  transition: all 0.8s ease-in-out;
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0px);
 }
 #setup-container {
-    margin-top: 10rem ;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    align-content: center;
+  margin-top: 10rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-content: center;
 }
 .container-product-name {
-    border:1px solid;
-    border-radius: 40px;
-    width: 10rem;
-    height: 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  border: 1px solid;
+  border-radius: 40px;
+  width: 10rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .container-product-price {
-    border:1px solid;
-    border-radius: 40px;
-    width: 5rem;
-    height: 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  border: 1px solid;
+  border-radius: 40px;
+  width: 5rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .container-product {
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    background-color: whitesmoke;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  background-color: whitesmoke;
 }
 .container-product .setup-black-nice {
-    width: 30vw;
-    height: 30vh;
-    background:url(../img/setup_black_nice.jpg) no-repeat center center/ cover ;
-    min-width: 400px;
-    cursor: pointer;
+  width: 30vw;
+  height: 30vh;
+  background: url(../img/setup_black_nice.jpg) no-repeat center center/ cover;
+  min-width: 400px;
+  cursor: pointer;
 }
 .container-product .desktop {
-    width: 30vw;
-    height: 30vh;
-    background: url(../img/desktop.jpg) no-repeat center center / cover;
-    min-width: 400px;
-    cursor: pointer;
+  width: 30vw;
+  height: 30vh;
+  background: url(../img/desktop.jpg) no-repeat center center / cover;
+  min-width: 400px;
+  cursor: pointer;
 }
 .container-product .setup-promotion {
-    width: 30vw;
-    height: 30vh;
-    background: url(../img/setup_luzes.jpg) no-repeat center center / cover;
-    min-width: 400px;
-    cursor: pointer;
+  width: 30vw;
+  height: 30vh;
+  background: url(../img/setup_luzes.jpg) no-repeat center center / cover;
+  min-width: 400px;
+  cursor: pointer;
 }
 #footer {
-    margin-top: 10rem;
-    padding: 1rem;
-    background-color: black;
+  margin-top: 10rem;
+  padding: 1rem;
+  background-color: black;
 }
-#footer .copyright{
-    text-align: center;
-    color: white;
+#footer .copyright {
+  text-align: center;
+  color: white;
 }
-@media screen and (max-width:1100px){
-    #search-box {
-        opacity: 1;
-        visibility: visible;
-        cursor: pointer;
-    }
-    .logo {
-        font-size: 2.5rem;
-    }
-    #laptop-container {
-        grid-template-columns: repeat(1, 1fr);
-    }
-    #setup-container {
-        grid-template-columns: repeat(1, 1fr);
-    }
+@media screen and (max-width: 1100px) {
+  #search-box {
+    opacity: 1;
+    visibility: visible;
+    cursor: pointer;
+  }
+  .logo {
+    font-size: 2.5rem;
+  }
+  #laptop-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  #setup-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 /* barra de scroll do site */
 ::-webkit-scrollbar {
-    width: 8px;
+  width: 8px;
 }
 ::-webkit-scrollbar-thumb {
-    background: #333;
+  background: #333;
 }
