@@ -131,7 +131,7 @@ body {
   justify-content: center;
   color: white;
   padding: 5px;
-  border-radius: 40px;
+  border-radius: 5px;
   background-color: rgb(194, 58, 81);
   cursor: pointer;
 }
@@ -142,7 +142,7 @@ body {
   justify-content: center;
   color: rgb(0, 0, 0);
   padding: 5px;
-  border-radius: 40px;
+  border-radius: 5px;
   background-color: white;
   text-decoration: none;
   cursor: pointer;
@@ -225,7 +225,7 @@ body {
 }
 .container-product-name {
   border: 1px solid;
-  border-radius: 40px;
+  border-radius: 5px;
   width: 10rem;
   height: 2rem;
   display: flex;
@@ -234,7 +234,7 @@ body {
 }
 .container-product-price {
   border: 1px solid;
-  border-radius: 40px;
+  border-radius: 5px;
   width: 5rem;
   height: 2rem;
   display: flex;
