@@ -11,7 +11,7 @@
 
 
 
-<p>Para ter acesso ao link do projeto <a href="https://bernardojru.github.io/E-COMMERCE/" target="blank">Clique aqui.</a>
+<p>Para ter acesso ao link do projeto <a href="https://bernardojru.github.io/bershop/" target="blank">Clique aqui.</a>
   
 
 
